@@ -1,0 +1,20 @@
+<div class="alert alert-danger" role="alert">
+    Student Roll No:{{studdetail.srollno}}<br/>
+  </div>
+  <div class="alert alert-success" role="alert">
+    Student Name:{{studdetail.sname}}
+<br/>
+  </div>
+  <div class="alert alert-warning" role="alert">
+    Selected Batch:{{studdetail.sbatch}}
+<br/>
+  </div>
+  <div class="alert alert-dark" role="alert">
+    Selected Department:{{studdetail.sdepartment}}
+<br/>
+  </div>
+
+<app-student [rollno]="item.rollno" [name]="item.name" 
+[batch]="item.batch" [department]="item.department" 
+*ngFor="let item of StudentDetails" 
+(sendStudent)="addStudent($event)"></app-student>
