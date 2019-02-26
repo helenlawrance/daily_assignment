@@ -1,0 +1,19 @@
+<!-- <p>
+  profile works!
+</p> -->
+<div>
+  <h1>
+   {{user.name}}
+  </h1>
+  <h3>{{user.qualification}}</h3>
+  <button (click)="toggle()">expand/compress</button>
+  <div *ngIf="!collapse">
+  <p> {{user.address}}</p>
+  <div *ngIf="user.phone.length>0">
+    <p>phone:</p>
+<!-- <p>{{user.phone[0]}} </p>
+<p>{{user.phone[1]}}</p> -->
+<p *ngFor="let phoneno of user.phone">{{phoneno}}</p>
+  </div>
+</div>
+</div> 

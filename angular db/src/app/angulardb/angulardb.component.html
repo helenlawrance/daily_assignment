@@ -1,0 +1,14 @@
+<!-- <p>
+  angulardb works!
+</p> -->
+
+<form #f="ngForm" name="regForm" (submit)="registeration(f)"> 
+  
+  <table>
+ <tr><td> Name </td><td> <input type="text" name="name" id="name" [(ngModel)]="student.name" ></td></tr>
+  <tr><td> username </td><td><input type="text" name="username" id="email" [(ngModel)]="student.username"></td></tr>
+    <tr><td> password </td><td> <input type="password" name="password" id="pswd" [(ngModel)]="student.password"></td></tr>
+  <input type="submit" value="submit" name="submit" >
+
+  </table>
+</form>
